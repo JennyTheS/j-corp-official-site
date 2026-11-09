@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J-Corp — Official Website</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #10182b;
+    border-bottom: 1px solid #26334d;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #65a9ff;
+}
+
+nav a {
+    color: #d5e0f2;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #65a9ff;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 120px 8%;
+    background: linear-gradient(120deg, #101c39, #142e58, #10182b);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #65a9ff;
+}
+
+.hero p {
+    max-width: 570px;
+    line-height: 1.7;
+    color: #c2cee2;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+    background: #3989f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #2672d8;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #151f34;
+    border: 1px solid #283957;
+    border-radius: 13px;
+    padding: 27px;
+    transition: 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    border-color: #3989f5;
+}
+
+.product h3 {
+    color: #76b3ff;
+    margin-bottom: 13px;
+}
+
+.product p {
+    color: #b7c5dc;
+    line-height: 1.6;
+}
+
+.about {
+    background: #10182b;
+}
+
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    color: #8293ae;
+    border-top: 1px solid #26334d;
+    font-size: 14px;
+}
+
+@media(max-width: 650px) {
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 90px 7%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">J-Corp</div>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#products">Продукти</a>
+        <a href="#about">Про компанію</a>
+    </nav>
+</header>
+
+<main>
+    <div class="hero" id="home">
+        <h1>Welcome to <span>J-Corp</span></h1>
+        <p>
+            Ласкаво просимо на офіційний сайт J-Corp.
+            Досліджуйте наші операційні системи,
+            програми та цифрові сервіси.
+        </p>
+        <a href="#products" class="button">Наші продукти</a>
+    </div>
+
+    <section id="products">
+        <h2 class="section-title">Наші продукти</h2>
+
+        <div class="products">
+            <div class="product">
+                <h3>Jendows</h3>
+                <p>Операційна система від J-Corp.</p>
+            </div>
+
+            <div class="product">
+                <h3>Jendows X</h3>
+                <p>Мобільна версія операційної системи.</p>
+            </div>
+
+            <div class="product">
+                <h3>JenWeb Official</h3>
+                <p>Офіційний браузер J-Corp.</p>
+            </div>
+
+            <div class="product">
+                <h3>JSearch</h3>
+                <p>Пошукова система J-Corp.</p>
+            </div>
+
+            <div class="product">
+                <h3>JWebDisk</h3>
+                <p>Хмарне сховище користувачів.</p>
+            </div>
+
+            <div class="product">
+                <h3>J-Corp Market</h3>
+                <p>Магазин програм та ігор.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">Про J-Corp</h2>
+        <p style="color:#b7c5dc;line-height:1.8;max-width:650px">
+            J-Corp — компанія, яка розробляє власні
+            операційні системи, програми та цифрові
+            сервіси для користувачів.
+        </p>
+    </section>
+</main>
+
+<footer>
+    © 2026 J-Corp. All rights reserved.
+    <br><br>
+    Official J-Corp Website
+</footer>
+
+</body>
+</html>
